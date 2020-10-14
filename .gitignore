@@ -11,7 +11,7 @@ thesis.ist
 thesis.lof
 thesis.log
 thesis.out
-thesis.pdf
+# thesis.pdf
 thesis.toc
 .DS_Store
 *.swp
