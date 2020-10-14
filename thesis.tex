@@ -1,0 +1,51 @@
+\documentclass[a4paper, oneside]{report}
+
+% import packages and setup
+\input{meta/packages.tex}
+\input{meta/setup.tex}
+
+\begin{document}
+
+% import acronyms
+\input{meta/acronyms.tex}
+
+% turn off page numbering for first pages
+\pagenumbering{gobble}
+
+% title
+\input{res/title.tex}
+\clearpage
+
+% epigraph
+\input{res/epigraph.tex}
+\clearpage
+
+% table of contents
+\tableofcontents
+
+% table of figures
+\listoffigures
+\vfill
+If not stated otherwise, images and graphics are courtesy of the author.
+\clearpage
+
+% table of tables
+\listoftables
+\thispagestyle{empty}
+
+% turn page numbering back on
+\pagenumbering{arabic}
+
+% import content
+\input{chapters/0_abstract.tex}
+\input{chapters/1_introduction.tex}
+\input{chapters/2_mainSection.tex}
+\input{chapters/3_conclusion.tex}
+
+% add glossaries after contents
+\printglossaries
+
+% add bibliography after glossary
+\input{meta/bib.tex}
+
+\end{document}

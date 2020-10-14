@@ -1,0 +1,24 @@
+% Change chapter title format
+\titleformat{\chapter}{\normalfont\huge\bfseries}{\thechapter}{26pt}{\huge\bfseries}
+
+% make glossary
+\makeglossaries
+
+% This maps the monospace comant texttt to code
+\newcommand{\code}{\texttt}
+
+% Checkmark for table in conclusion, since unicode does not work
+\def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;} 
+
+% set path to graphics dir
+\graphicspath{ 
+	{img/pdf/} 
+	{img/png/} 
+	{img/jpg/} 
+}
+
+% Use European date format
+\renewcommand{\dateseparator}{.}
+
+% Move heading of TOC up
+\setlength{\cftbeforetoctitleskip}{10pt}
